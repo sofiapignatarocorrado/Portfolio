@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+/*conf general*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    background-color: rgb(1, 7, 12);
+    color: white;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+h2{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.linea{
+    width: 100%;
+    height: 2px;
+    background-color: #10e0cc;
+    color: #10e0cc;
+    margin: 20px auto;
+}
+
+/*Barra de navegacion*/    
+header {
+    width: 100%;
+    height: 50px;
+    background: rgba(1, 7, 12, 0.8);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+nav ul {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 60px;
+}
+
+nav a, nav li {
+    position: relative;
+    padding: 10px 0;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight:bold;
+    transition: 0.3s ease;
+}
+
+/*animacion de subrayado*/
+nav a::after{
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    width: 0;
+    height: 2px;
+    left: 50%;
+    background-color: #10e0cc;
+    transform: translateX(-50%);
+    transition: 0.3s ease;
+}
+
+nav a:hover::after{
+    width: 100px;
+}
+
+nav a:hover {
+    color: #10e0cc;
+}
+
+/*Inicio*/
+#inicio {
+    width: 100%;
+    height: 100vh;
+    padding-top: 50px;
+}
+
+.presentacion {
+    width: 100%;
+    height: 100%;
+    background: 
+    linear-gradient(to top,rgb(1, 7, 12) 30%, rgba(1, 7, 12, 0.6) 100%),
+    url("imgs/fondo.jpg")
+    ;
+    background-size: cover;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.foto-perfil img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #10e0cc;
+}
+
+.info {
+    max-width: 500px;
+}
+
+/*Contenedor general*/
+.cuadro{
+    width: 33%;
+    padding: 30px;
+    border: 1px solid #10e0cc;
+    border-radius: 5px;
+    text-align: start;
+    white-space: normal;
+    overflow: hidden;
+}
+
+.cuadro img{
+    margin:10px;
+    max-width: 40px;
+    height: 40px;
+}
+
+.cuadro p{
+    margin-top: 10px;
+}
+
+
+/*Skills*/
+#skills {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.contenedor-habilidades {
+    width: 70%;
+    height: auto;
+    margin:30px auto;
+    padding: 30px;
+    background-color:rgb(16, 30, 41);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items:start;
+    gap: 10px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+
+/*Educaion-Certificaciones*/
+#educacion-certificaciones {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    padding-top: 50px;
+}
+
+.contenedor-grid{
+    width: 70%;
+    height: auto;
+    margin:30px auto;
+    padding: 30px;
+    background-color:rgb(16, 30, 41);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items:start;
+    gap: 30px;
+    overflow: hidden;
+}
+
+.contenedor-grid .cuadro{
+    width: 100%;
+}
+
+/*Contacto*/
+#contacto{
+    width: 100%;
+    height: 90vh;
+    padding-top: 50px;
+}
+
+.lista-contactos{
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+}
+
+.lista-contactos ul{
+    list-style: none;
+    margin: 20px 0;
+}
+
+/*Cuadro de contacto*/
+.item-contacto{
+    margin:10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 10px 20px;
+    border: 1px solid #10e0cc;
+    border-radius: 5px;
+}
+
+.btn{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    width: 70px;
+    font-size: 15px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: rgb(1, 7, 12);
+    cursor: pointer;
+    transition: border 0.5s ease, color 0.5s ease, background-color 0.5s ease;
+}
+
+.btn:hover{
+    border:1px solid #10e0cc;
+    color: #10e0cc;
+    background-color: rgb(16, 30, 41);
+}
+
+.item-contacto img{
+    max-width: 20px;
+    height: 20px;
+}
+
+.item-contacto>div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/*Mensaje de confirmación*/
+.copy-msg {
+    position: relative;
+    font-size: 15px;
+    color: #6dffb2;
+}

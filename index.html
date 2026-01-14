@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Personal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#educacion-certificaciones">Educación/Certificaciones</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <div class="presentacion">
+                <div class="info">
+                    <h1>Sofia Pignataro</h1>
+                    <h2>Font-End Web Designer<br>Software Developer</h2>
+                    <p>
+                        Tengo 18 años y soy una estudiante de la técnicatura de programación. Mi objetivo es seguir creciendo como desarrollador y construir proyectos cada vez mas completos, funcionales y estéticos. Me gustaría aplicar mis conocimientos, aprender de la experiencia profesional y asumir responsabilidades de trabajo.
+                    </p>
+                </div>
+
+                <div class="foto-perfil">
+                    <img src="imgs/foto-perfil.png" alt="Foto personal">
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Habilidades</h2>
+            <div class="contenedor-habilidades">
+                <div class="cuadro">
+                    <h3><b>|</b> Idiomas</h3>
+                    <p>Español (nativo)</p>
+                    <p>B2 Ingles</p>
+                </div>
+                <div class="cuadro">
+                    <h3><b>|</b> Software</h3>
+                    <p>Front-End</p>
+                    <span><img src="imgs/html-logo.png" alt="logo html"><img src="imgs/css-logo.png" alt="logo css"><img src="imgs/javascript-logo.png" alt="logo javascript"></span>
+                    <p>Lenguajes de Programación</p>
+                    <span><img src="imgs/python-logo.png" alt="logo python"><img src="imgs/c-logo.png" alt="logo c++"><img src="imgs/cc-logo.png" alt="logo c#"></span>
+                    <p>Otros</p>
+                    <span><img src="imgs/github-logo.png" alt="logo github"><img src="imgs/canva-logo.png" alt="logo canva"><img src="imgs/figma-logo.png" alt="logo figma"></span>
+                </div>
+                <div class="cuadro">
+                    <h3><b>|</b> Personales</h3>
+                    <p>Creatividad</p>
+                    <p>Trabajo en equipo</p>
+                    <p>Resolución de problemas</p>
+                    <p>Capacidad de aprendizaje rápido</p>
+                    <p>Paciencia</p>
+                    <p>Responsabilidad y compromiso</p>
+                </div> 
+            </div>
+        </section>
+        <section id="educacion-certificaciones">
+            <div class="contenedor-grid">
+                <h2><b>| </b>Educación</h2>
+                <h2><b>| </b>Certificaciones</h2>
+                <div class="cuadro">
+                    <h3>Escuela de Educación<br>Técnica N°5 de Lanús</h3>
+                    <p>2020 - Actualidad</p>
+                    <p>Cursando el séptimo año de la carrera de programación, realizando prácticas y pasantiás dentro del colegio.</p>
+                    <div class="linea"></div>
+                    <h3>Educación autodidacta</h3>
+                    <p>De manera paralela a la formación académica, me encuentro aprendiendo desarrollo web y de software a través de cursos online y práctica constante en proyectos personales.</p>
+                </div>
+                <div class="cuadro">
+                    <h3>Instituto de Ingles <br>Breaking Rules</h3>
+                    <p>2024</p>
+                    <p>Certificado de nivel B2 (intermedio-alto). Comprensión de documentación técnica y textos complejos, comunicación escrita y habla fluida.</p>
+                    <div class="linea"></div>
+                    <h3>Campeón del segundo nivel <br>Torneo Matemático</h3>
+                    <p>2023</p>
+                    <p>Torneo organizado por la Secretaría de Educación Municipal de Lanús que contó con más de 800 participantes de escuelas secundarias.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <div class="lista-contactos">
+                <h2>Contacto</h2>
+                <p>Estoy buscando mi primera oportunidad laboral como programador. Si te gustaría colaborar conmigo o  acercarme una propuesta, podes contactarme a traves de:</p>
+                <ul>
+                    <li class="item-contacto">
+                        <div><img src="imgs/telefono.png" alt="telefono logo">
+                        <p id="text">(+54) 11 5525-8121</p></div>
+                        <div><button class="btn" onclick="copiar('11 5525-8121')">Copiar</button></div>
+                    </li>
+                    <li class="item-contacto">
+                        <div><img src="imgs/mail.png" alt="mail logo">
+                        <p id="text">sofiapignatarocorrado@gmail.com</p></div>
+                        <div><a href="https://mail.google.com/mail/?view=cm&fs=1&to=sofiapignatarocorrado@gmail.com" target="_blank" class="btn">Ir</a>
+                        <button class="btn" onclick="copiar('sofiapignatarocorrado@gmail.com')">Copiar</button></div>
+                    </li>
+                    <li class="item-contacto"><div><img src="imgs/github-logo.png" alt="github logo">
+                        <p>GitHub</p></div>
+                        <div><a href="https://github.com/sofiapignatarocorrado" target="_blank" class="btn">Ir</a></div>
+                    </li>
+                    <li class="item-contacto"><div><img src="imgs/linkedin-logo.png" alt="linkedin logo">
+                        <p>Linkedin</p></div>
+                        <div><a href="https://www.linkedin.com/in/sofia-pignataro-958b53365/" target="_blank" class="btn">Ir</a></div>
+                    </li>
+                </ul>
+                <span class="copy-msg" id="copy-msg"></span>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 Sofia Pignataro.</p>
+    </footer>
+</body>
+</html>
